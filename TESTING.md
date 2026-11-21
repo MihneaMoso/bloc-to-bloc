@@ -2,7 +2,7 @@
 
 **Prototip de concurs. Date demonstrative. Fără plăți reale.**  
 **URL public:** `https://bloc-cu-bloc-ten.vercel.app`  
-**QR:** `deliverables/QR_TEAMCODE.png`
+**QR:** `release/QR_TEAMCODE.png`
 
 > Dacă URL-ul public nu este încă activ, rulează local: `npm install && npm run build && npm run preview` și deschide `http://localhost:4173`. Pentru deplasare pe telefon în aceeași rețea, folosește IP-ul local al calculatorului și portul 4173.
 

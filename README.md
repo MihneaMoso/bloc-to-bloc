@@ -7,7 +7,8 @@ O lume 3D mică și jucabilă: o ilustrație artistică a viitorului campus, cu 
 - **URL public:** `https://bloc-cu-bloc-ten.vercel.app`
 - **Instrucțiuni pentru evaluator:** [`TESTING.md`](TESTING.md)
 - **Decizii și ipoteze:** [`DECISIONS.md`](DECISIONS.md)
-- **TEAMCODE:** înlocuiește `TEAMCODE` în numele fișierelor din `deliverables/` cu codul echipei.
+- **TEAMCODE:** înlocuiește `TEAMCODE` în numele fișierelor din pachetul final cu codul echipei.
+- **GitHub:** repository local pregătit (`a850599`); conectarea remote/Vercel Git se face cu comenzile de mai jos după autorizarea publicării.
 
 ## Conformitate (implementată în UI și cod)
 
@@ -48,16 +49,27 @@ Proiectul este static și nu are nevoie de variabile de mediu sau backend.
 **Netlify:** `npx netlify deploy --prod --dir=dist` sau conectează repo-ul. `netlify.toml` este inclus.
 **Cloudflare Pages:** build command `npm run build`, output directory `dist`; `public/_headers` este copiat automat în build.
 
-După deploy, actualizează `https://bloc-cu-bloc-ten.vercel.app` în `README.md` și `TESTING.md`, apoi regenerează QR-ul și PPT-ul cu scripturile din `scripts/` (vezi mai jos). URL-urile relative și service worker-ul folosesc rădăcina domeniului (`base: '/'`).
+Deploy-ul de producție este activ la `https://bloc-cu-bloc-ten.vercel.app`. După orice modificare a URL-ului, regenerează QR-ul și PPT-ul cu `PUBLIC_URL=https://... .venv/bin/python scripts/generate_pitch.py`. URL-urile relative și service worker-ul folosesc rădăcina domeniului (`base: '/'`).
+
+### Conectare GitHub → Vercel
+
+Repository-ul local are deja un commit. După ce remote-ul GitHub există:
+
+```bash
+gh repo create bloc-cu-bloc --private --source=. --remote=origin --push
+npx vercel git connect https://github.com/<user>/bloc-cu-bloc
+```
+
+Apoi fiecare push pe branch-ul principal declanșează un deploy de producție.
 
 ### QR și materiale
 
 ```bash
-.venv/bin/python scripts/generate_deliverables.py   # QR, promo, PPT (necesită PUBLIC_URL)
-.venv/bin/python scripts/generate_finance.py        # XLSX cu formule
-.venv/bin/python scripts/generate_jurnal.py         # DOCX pentru Jurnalul AI
-npx playwright pdf "file://$PWD/scripts/strategie.html" deliverables/Strategie_TEAMCODE.pdf --paper-format A4
-npx playwright screenshot --viewport-size "1080,1350" "file://$PWD/scripts/promo.html" deliverables/Promo_TEAMCODE.png
+.venv/bin/python scripts/generate_finance.py        # XLSX cu formule (scrie în deliverables/)
+OUT_DIR=release .venv/bin/python scripts/generate_jurnal.py   # DOCX pentru Jurnalul AI
+PUBLIC_URL=https://bloc-cu-bloc-ten.vercel.app .venv/bin/python scripts/generate_pitch.py
+npx playwright pdf "file://$PWD/scripts/strategie.html" release/Strategie_TEAMCODE.pdf --paper-format A4
+npx playwright screenshot --viewport-size "1080,1350" "file://$PWD/scripts/promo.html" release/Promo_TEAMCODE.png
 ```
 
 ## Arhitectură
