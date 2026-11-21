@@ -8,7 +8,8 @@ O lume 3D mică și jucabilă: o ilustrație artistică a viitorului campus, cu 
 - **Instrucțiuni pentru evaluator:** [`TESTING.md`](TESTING.md)
 - **Decizii și ipoteze:** [`DECISIONS.md`](DECISIONS.md)
 - **TEAMCODE:** înlocuiește `TEAMCODE` în numele fișierelor din pachetul final cu codul echipei.
-- **GitHub:** repository local pregătit (`a850599`); conectarea remote/Vercel Git se face cu comenzile de mai jos după autorizarea publicării.
+- **GitHub:** https://github.com/MihneaMoso/bloc-to-bloc
+- **Vercel Git:** conectarea automată se face cu `npx vercel git connect https://github.com/MihneaMoso/bloc-to-bloc` (necesită confirmarea explicită a mediului).
 
 ## Conformitate (implementată în UI și cod)
 
