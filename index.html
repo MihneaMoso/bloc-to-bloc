@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="ro">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, maximum-scale=5" />
+    <meta name="theme-color" content="#071c2a" />
+    <meta name="description" content="Bloc-Cu-Bloc – prototip de concurs: o lume 3D colaborativă care ilustrează viitorul campus. Contribuțiile sunt simulate; pentru sprijin real folosește pagina oficială a Fundației HIPOLITECH." />
+    <meta property="og:title" content="Bloc-Cu-Bloc – campusul viitorului, în miniatură" />
+    <meta property="og:description" content="Construiește într-o simulare 3D pentru campania Fundației HIPOLITECH. Prototip de concurs, date demonstrative, fără plăți reale." />
+    <meta property="og:type" content="website" />
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <link rel="icon" href="/icons/icon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="/icons/icon-192.png" />
+    <title>Bloc-Cu-Bloc · simulare campus</title>
+  </head>
+  <body>
+    <div id="app">
+      <canvas id="scene" class="world-canvas" aria-label="Lume 3D Bloc-Cu-Bloc"></canvas>
+      <canvas id="fallback2d" class="world-canvas hidden" aria-label="Vizualizare 2D Bloc-Cu-Bloc"></canvas>
+      <div id="splash" class="screen"></div>
+      <div id="hud" class="hud hidden"></div>
+      <div id="toasts" class="toasts" role="status" aria-live="polite"></div>
+      <div id="modal-root"></div>
+      <noscript><p class="noscript">Activează JavaScript pentru a folosi prototipul.</p></noscript>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

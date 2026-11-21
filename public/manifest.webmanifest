@@ -1,0 +1,20 @@
+{
+  "name": "Bloc-Cu-Bloc",
+  "short_name": "Bloc-Cu-Bloc",
+  "description": "Prototip de concurs: o lume 3D colaborativă pentru campania Fundației HIPOLITECH. Contribuții simulate, fără plăți reale.",
+  "id": "/",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#061922",
+  "theme_color": "#071c2a",
+  "lang": "ro",
+  "categories": ["games", "education", "social"],
+  "icons": [
+    { "src": "/icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "/icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "/icons/icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" },
+    { "src": "/icons/icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }
+  ]
+}

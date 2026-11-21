@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="ro">
+<head>
+<meta charset="utf-8" />
+<title>Strategie_TEAMCODE</title>
+<style>
+  @page { size: A4; margin: 0; }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; background: #fff; }
+  body {
+    width: 210mm; min-height: 297mm; padding: 8mm 10mm 5mm;
+    font-family: "DejaVu Sans", "Liberation Sans", Arial, sans-serif;
+    color: #18332e; font-size: 6.85pt; line-height: 1.26;
+    -webkit-print-color-adjust: exact; print-color-adjust: exact;
+  }
+  .top {
+    background: linear-gradient(120deg, #071c2a 0%, #0e3a3a 72%, #1b6558 100%);
+    color: #fff; border-radius: 3.5mm; padding: 6mm 7mm 5mm; position: relative; overflow: hidden;
+  }
+  .top::after { content: ""; position: absolute; width: 70mm; height: 70mm; border-radius: 50%;
+    right: -28mm; top: -40mm; background: radial-gradient(circle, rgba(111,240,211,.3), transparent 70%); }
+  .kicker { font-size: 6.3pt; letter-spacing: .13em; color: #ffd166; font-weight: 700; }
+  h1 { font-size: 18pt; line-height: 1.03; margin: 1.4mm 0 1.1mm; letter-spacing: -.03em; }
+  .lead { font-size: 7.4pt; color: #d8f1ea; max-width: 160mm; }
+  .meta { display: flex; gap: 3mm; margin-top: 2.4mm; flex-wrap: wrap; }
+  .pill { border: 1px solid rgba(255,255,255,.22); background: rgba(255,255,255,.07);
+    border-radius: 99px; padding: 1.1mm 2.6mm; font-size: 6.5pt; color: #eafff9; }
+  .pill b { color: #6ff0d3; }
+  .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 3.4mm; margin-top: 3mm; }
+  .col { display: flex; flex-direction: column; gap: 2.4mm; }
+  section { border: 1px solid #d7e8e2; border-radius: 2.4mm; padding: 2.3mm 2.7mm; background: #fbfdfc; }
+  section h2 { font-size: 7.7pt; margin: 0 0 1.2mm; color: #0e3a3a; letter-spacing: -.01em;
+    display: flex; align-items: center; gap: 1.6mm; }
+  section h2 span.n { display: inline-grid; place-items: center; width: 4.4mm; height: 4.4mm;
+    border-radius: 1.2mm; background: #0e3a3a; color: #6ff0d3; font-size: 6.5pt; flex: 0 0 auto; }
+  p { margin: 0 0 1mm; }
+  ul { margin: 0; padding-left: 3.2mm; }
+  li { margin-bottom: .6mm; }
+  b, strong { color: #0a2825; }
+  .small { font-size: 6.15pt; color: #4e6b66; line-height: 1.3; }
+  .tag { display: inline-block; background: #e3f7f0; color: #0b5a4d; border-radius: 99px;
+    padding: .25mm 1.6mm; font-size: 6.1pt; font-weight: 700; }
+  .callout { background: #fff7e3; border-color: #f0d795; }
+  .callout h2 { color: #6b4a00; }
+  .funnel { display: grid; grid-template-columns: 1fr auto; gap: 1mm 2mm; font-size: 6.8pt; }
+  .funnel .v { font-weight: 800; color: #0b5a4d; }
+  .money { display: grid; grid-template-columns: 1fr 1fr; gap: 1.2mm; margin-top: 1mm; }
+  .money div { background: #eaf8f3; border-radius: 1.5mm; padding: 1.6mm 2mm; font-size: 6.6pt; }
+  .money b { display: block; font-size: 8.4pt; color: #0b5a4d; }
+  .steps { display: grid; gap: 1.5mm; }
+  .step { display: grid; grid-template-columns: 5mm 1fr; gap: 2mm; align-items: start; }
+  .step i { display: grid; place-items: center; width: 5mm; height: 5mm; border-radius: 50%;
+    background: #ffd166; color: #3a2600; font-style: normal; font-weight: 800; font-size: 6.5pt; }
+  .footer { margin-top: 2.2mm; display: flex; justify-content: space-between; gap: 3mm;
+    font-size: 6.1pt; color: #6f8f89; border-top: 1px solid #d7e8e2; padding-top: 2mm; }
+  .footer b { color: #0e3a3a; }
+  .badge-official { background: #fff0cc; border: 1px solid #eed28d; border-radius: 1.6mm;
+    padding: 1.1mm 1.7mm; font-size: 6pt; color: #5c4200; margin-top: 0; }
+</style>
+</head>
+<body>
+  <div class="top">
+    <div class="kicker">AI-POWERED BUSINESS CHALLENGE · START YOUR STARTUP 2026 · SECȚIUNEA STUDENȚI</div>
+    <h1>Bloc-Cu-Bloc — un campus construit împreună, în miniatură</h1>
+    <div class="lead">Strategie de campanie pentru „Un loc în cămin poate schimba un destin!”, Fundația HIPOLITECH. Prototip de concurs, cu date demonstrative și fără plăți reale. Documentul folosește ipoteze de concurs, nu ținte ale Fundației.</div>
+    <div class="meta">
+      <span class="pill"><b>Segmente:</b> alumni & comunitate + companii</span>
+      <span class="pill"><b>Ipoteză:</b> 250.000 lei brut · buget max. 15.000 lei · 6 luni</span>
+      <span class="pill"><b>TEAMCODE</b></span>
+    </div>
+  </div>
+
+  <div class="grid">
+    <div class="col">
+      <section>
+        <h2><span class="n">1</span>Segmente alese și motivația</h2>
+        <p><span class="tag">Alumni & comunitate</span> Absolvenții au legătură afectivă cu campusul și pot deveni susținători recurenți. Comunitatea locală și studenții aduc distribuție organică.</p>
+        <p><span class="tag">Companii</span> Companiile tech din București au nevoie de vizibilitate autentică în rândul studenților și de un cadru clar pentru discuții de sponsorizare. Prototipul oferă panouri demonstrative, nu promisiuni de afișare reală.</p>
+        <p class="small">Nu pretindem parteneriate, sponsori sau beneficiari reali. Toate numele din demo sunt fictive.</p>
+      </section>
+
+      <section>
+        <h2><span class="n">2</span>Decident, obstacol, canale legitime</h2>
+        <p><b>Alumni:</b> decident = absolventul 28–45 de ani, cu venit stabil; obstacol = distanță față de viața de student și neîncredere în „unde ajung banii”. Răspuns: transparență, simulare clară, link oficial pentru donația reală.</p>
+        <p><b>Companii:</b> decident = manager CSR / marketing / HR employer branding; obstacol = lipsa unui dosar credibil și a unui motiv de implicare. Răspuns: discuție fără angajament, pachete de vizibilitate clar delimitate, fără promisiuni inventate.</p>
+        <p><b>Canale:</b> comunități de absolvenți și evenimente de facultate, newsletter cu consimțământ, LinkedIn (contact direct, nu liste cumpărate), QR pe campus, creatori demo cu colaborare dezvăluită, evenimente în campus.</p>
+      </section>
+
+      <section>
+        <h2><span class="n">3</span>Valoare, mesaj, CTA</h2>
+        <p><b>Valoare alumni:</b> revii în campus, construiești vizibil și vezi comunitatea în mișcare; contribuția simulată este un instrument de implicare, nu o plată. <b>Valoare companii:</b> explorare de branding în lumea 3D și semnal de implicare în educație.</p>
+        <p><b>Mesaj:</b> „Un loc în cămin poate schimba un destin. Intră în Bloc-Cu-Bloc, construiește în simulare și susține campania reală pe pagina oficială.”</p>
+        <p><b>CTA principal:</b> „Susține campania reală” → pagina oficială a Fundației, în tab nou, rel=noopener. <b>CTA secundar:</b> joacă simularea și invită un prieten.</p>
+        <p class="small">Ton factual, fără vină sau presiune. Nu spunem că o contribuție cumpără un spațiu sau un drept de cazare.</p>
+      </section>
+
+      <section class="callout">
+        <h2><span class="n">4</span>Responsible communication</h2>
+        <ul>
+          <li>Separăm permanent <b>simulat</b> de <b>real</b> și <b>promis</b> de <b>primit</b>.</li>
+          <li>Date minime, consimțământ unde e necesar, fără date personale reale în demo; GDPR-aware.</li>
+          <li>Nu inventăm sponsori, beneficiari, testimoniale sau parteneriate; nu promitem cum va arăta clădirea.</li>
+          <li>Nu afirmăm deductibilitate fiscală și nu folosim presiune emoțională.</li>
+          <li>Cifrele oficiale sunt citate ca „estimare publicată de Fundație”; ipotezele de concurs sunt etichetate ca atare.</li>
+        </ul>
+      </section>
+    </div>
+
+    <div class="col">
+      <section>
+        <h2><span class="n">5</span>Măsurare: vizitatori → interes → donații → sponsorizări</h2>
+        <div class="funnel">
+          <span>Vizitatori prototip / unic</span><span class="v">8.000 (ipoteză luna 1)</span>
+          <span>Interes: CTA real + cereri demo sponsor</span><span class="v">≥ 2,5% / 50 cereri</span>
+          <span>Donatori confirmați (reali, Fundație)</span><span class="v">500</span>
+          <span>Sponsorizări confirmate și încasate</span><span class="v">20</span>
+        </div>
+        <p class="small" style="margin-top:1.5mm">Conversie = donatori confirmați / contacte eligibile. Bază eligibilă = contacte prin canale legitime, fără duplicate, minori sau persoane fără canal/consimțământ. Cost per donator = cheltuieli relevante / donatori confirmați.</p>
+        <div class="money">
+          <div><b>500 × 100 lei</b>donații individuale = 50.000 lei</div>
+          <div><b>20 × 10.000 lei</b>sponsorizări = 200.000 lei</div>
+          <div><b>250.000 lei</b>brut (ipoteză) </div>
+          <div><b>235.000 lei</b>net după costuri de 15.000 lei</div>
+        </div>
+        <p class="small">Scenarii: A (contribuție medie −30%) = 235.000 brut / 220.000 net; B (sponsori înjumătățiți) = 150.000 brut / 135.000 net. Sumele promise nu se presupun încasate integral.</p>
+      </section>
+
+      <section>
+        <h2><span class="n">6</span>Plan de test — luna 1</h2>
+        <ul>
+          <li><b>Săptămâna 1:</b> landing page + prototip + QR; două mesaje A/B („revino în campus” vs. „construiește vizibil”). Buget test: 2.500 lei.</li>
+          <li><b>Săptămâna 2:</b> 3 postări social + 2 evenimente/întâlniri alumni; măsurăm click-ul pe CTA real, nu doar timpul în joc.</li>
+          <li><b>Săptămâna 3:</b> 40 de companii țintite prin intro/contact direct; cerem o discuție, nu o promisiune.</li>
+          <li><b>Săptămâna 4:</b> raport: vizitatori, CTA-uri, cereri demo, donații confirmate de Fundație, cost per donator. Decizie: scalez / schimb mesajul / opresc.</li>
+        </ul>
+        <p><b>Praguri de test:</b> ≥1,5% click CTA real; ≥3% cereri demo din vizite relevante; cost per donator ≤25 lei; cel puțin 5 discuții de sponsorizare.</p>
+        <p class="small"><b>Dacă rezultatele sunt mici:</b> sub 1,5% click → rescriu promisiunea și CTA; trafic mare, dar donații puține → verific încrederea și claritatea linkului oficial; companii fără răspuns → reduc pachetele și cer intro-uri; cost per donator mare → mut bugetul din social în alumni/campus.</p>
+      </section>
+
+      <section>
+        <h2><span class="n">7</span>Plan în 3 pași</h2>
+        <div class="steps">
+          <div class="step"><i>1</i><div><b>Validează (luna 1):</b> prototip + test A/B pe alumni, 40 companii, măsurare onestă. Ieșire: mesaj câștigător și cost per donator.</div></div>
+          <div class="step"><i>2</i><div><b>Scalează (lunile 2–3):</b> social plătit pe mesajul câștigător, campus QR, comunități alumni, creatori demo. Optimizare săptămânală.</div></div>
+          <div class="step"><i>3</i><div><b>Consolidează (lunile 4–6):</b> outreach sponsorizări, matching demonstrativ, raport de impact către comunitate; închidere cu sume confirmate de Fundație, separate de simulare.</div></div>
+        </div>
+        <p class="small" style="margin-top:1.4mm">Echipa: 2–3 studenți (produs/conținut, parteneriate, analiză). Bugetul total este plafonat la 15.000 lei; fiecare cost apare o singură dată în modelul financiar.</p>
+      </section>
+
+      <div class="badge-official">
+        <b>Cifre oficiale, cu atribuire:</b> proiect total 100.000.000 lei; prima etapă (proiectare, avize, autorizații) 1.250.000 lei — <i>estimare publicată de Fundație</i>. Sursa: fundatia.upb.ro/proiecte-si-evenimente/un-loc-in-camin-poate-schimba-un-destin/
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <span><b>Bloc-Cu-Bloc</b> · TEAMCODE · prototip de concurs · date demonstrative · fără plăți reale</span>
+    <span>Strategie într-o pagină · ipoteze de concurs, nu ținte ale Fundației</span>
+  </div>
+</body>
+</html>
